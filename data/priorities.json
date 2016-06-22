@@ -1,0 +1,5 @@
+[
+  {"name": "high", "color": "red", "value": 1},
+  {"name": "medium", "color": "yellow", "value": 2},
+  {"name": "low", "color": "orange", "value": 3}
+]
