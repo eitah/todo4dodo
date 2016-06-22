@@ -1,5 +1,6 @@
 npm i bluebird \
   body-parser \
+  bower \
   compression \
   express \
   mongoose \
