@@ -5,6 +5,7 @@ block content
   table.table.table-striped
     thead
       tr
+        th delete
         th id
         th name
         th due
@@ -14,8 +15,12 @@ block content
         th Created on
     tbody
       each task in viewTasks
+
         tr(style='background-color:' + task.priority.color)
-          td= task._id
+          td
+            form.form-inline(action= '/tasks/' + task.id + '/delete', method='post')
+              button.btn.btn-primary(type='submit') Delete
+          td= task.id
           td= task.name
           td= task.due
           td= task.priority.name
